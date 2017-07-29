@@ -1,0 +1,12 @@
+{
+  "name": "ufc-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch-ufc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renato Ferreira <renato.ferreira@bt.com>",
+  "license": "ISC",
+  "dependencies": {}
+}
