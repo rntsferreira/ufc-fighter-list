@@ -48,10 +48,10 @@ const getFighters = ((response, {
   moveChampionToTheTopfn
  }) => {
   return moveChampionToTheTopfn(
-      sortByWinsfn(
-        orderByfn(response, 'weight_class')
-      )
-    );
+    sortByWinsfn(
+      orderByfn(response, 'weight_class')
+    )
+  );
 });
 
 const fighters = getFighters(
@@ -63,13 +63,9 @@ const fighters = getFighters(
   }
 );
 
-console.log(fighters['Heavyweight'][0].last_name);
-console.log(fighters['Light_Heavyweight'][0].last_name);
-console.log(fighters['Middleweight'][0].last_name);
-console.log(fighters['Welterweight'][0].last_name);
-console.log(fighters['Lightweight'][0].last_name);
-console.log(fighters['Featherweight'][0].last_name);
-console.log(fighters['Bantamweight'][0].last_name);
-console.log(fighters['Flyweight'][0].last_name);
-console.log(fighters['Women_Bantamweight'][0].last_name);
-console.log(fighters['Women_Strawweight'][0].last_name);
+Object.keys(fighters).map(weightClass => {
+  const fightersByWeightClass = fighters[weightClass];
+  console.log(`Current champion at ${fightersByWeightClass[0].weight_class} class:`);
+  console.log(`${fightersByWeightClass[0].first_name} ${fightersByWeightClass[0].last_name}`);
+  console.log('----------------------------');
+});
