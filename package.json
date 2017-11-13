@@ -9,7 +9,8 @@
   "author": "Renato Ferreira <rntsferreira@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2"
   },
   "devDependencies": {
     "eslint": "^4.11.0",
